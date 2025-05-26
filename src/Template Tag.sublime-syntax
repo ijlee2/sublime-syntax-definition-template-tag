@@ -30,4 +30,6 @@ contexts:
         - match: </template>
           scope: punctuation.definition.tag.end.js
           pop: true
-        - include: Handlebars.sublime-syntax
+        - embed: scope:text.html.handlebars
+          escape: (?=<\/template)
+          match: ""
