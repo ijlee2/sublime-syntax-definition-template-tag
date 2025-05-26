@@ -1,6 +1,6 @@
 {
   "name": "sublime-syntax-definition-template-tag",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Provides syntax highlighting for <template> tags for Sublime Text",
   "keywords": [
@@ -20,7 +20,7 @@
     "test": "tests"
   },
   "files": [
-    "dist"
+    "src"
   ],
   "scripts": {
     "lint": "prettier \"src/**/*.sublime-syntax\" --check",
