@@ -17,6 +17,11 @@ contexts:
     - meta_prepend: true
     - include: template-tag
 
+  # With backing class
+  ts-type-parameter-list:
+    - meta_prepend: true
+    - include: template-tag
+
   template-tag:
     - match: <template>
       scope: punctuation.definition.tag.begin.js
