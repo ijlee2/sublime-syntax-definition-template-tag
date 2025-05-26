@@ -1,0 +1,35 @@
+%YAML 1.2
+---
+name: Template Tag
+scope: source.template-tag
+version: 2
+
+extends:
+  - Packages/JavaScript/TypeScript.sublime-syntax
+
+file_extensions:
+  - gjs
+  - gts
+
+contexts:
+  # Template-only
+  expression-begin:
+    - meta_prepend: true
+    - include: template-tag
+
+  # With backing class
+  ts-type-parameter-list:
+    - meta_prepend: true
+    - include: template-tag
+
+  template-tag:
+    - match: <template>
+      scope: punctuation.definition.tag.begin.js
+      push:
+        - meta_content_scope: source.template-tag.content
+        - match: </template>
+          scope: punctuation.definition.tag.end.js
+          pop: true
+        - embed: scope:text.html.handlebars
+          escape: (?=<\/template)
+          match: ""
