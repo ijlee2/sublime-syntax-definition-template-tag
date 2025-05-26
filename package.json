@@ -1,0 +1,41 @@
+{
+  "name": "sublime-syntax-definition-template-tag",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Provides syntax highlighting for <template> tags for Sublime Text",
+  "keywords": [
+    "emberjs",
+    "sublime text",
+    "syntax highlighting",
+    "template tag"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ijlee2/sublime-syntax-definition-template-tag.git"
+  },
+  "license": "MIT",
+  "author": "Isaac J. Lee",
+  "type": "module",
+  "directories": {
+    "test": "tests"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "prettier \"src/**/*.sublime-syntax\" --no-error-on-unmatched-pattern --check",
+    "lint:fix": "prettier \"src/**/*.sublime-syntax\" --no-error-on-unmatched-pattern --write",
+    "release:prepare": "changeset version",
+    "release:publish": "changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.4",
+    "@changesets/get-github-info": "^0.6.0",
+    "@ijlee2-frontend-configs/prettier": "^1.0.0",
+    "prettier": "^3.5.3"
+  },
+  "packageManager": "pnpm@9.15.9",
+  "engines": {
+    "node": "20.* || >= 22"
+  }
+}
