@@ -23,8 +23,8 @@
     "dist"
   ],
   "scripts": {
-    "lint": "prettier \"src/**/*.sublime-syntax\" --no-error-on-unmatched-pattern --check",
-    "lint:fix": "prettier \"src/**/*.sublime-syntax\" --no-error-on-unmatched-pattern --write",
+    "lint": "prettier \"src/**/*.sublime-syntax\" --check",
+    "lint:fix": "prettier \"src/**/*.sublime-syntax\" --write",
     "release:prepare": "changeset version",
     "release:publish": "changeset publish"
   },
