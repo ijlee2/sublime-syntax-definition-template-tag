@@ -1,6 +1,6 @@
 {
   "name": "sublime-syntax-definition-template-tag",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Provides syntax highlighting for <template> tags for Sublime Text",
   "keywords": [
