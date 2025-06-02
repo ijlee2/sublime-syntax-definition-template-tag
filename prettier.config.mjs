@@ -1,4 +1,4 @@
-import baseConfiguration from '@ijlee2-frontend-configs/prettier';
+import baseConfiguration from '@ijlee2-frontend-configs/prettier/node';
 
 export default {
   ...baseConfiguration,
