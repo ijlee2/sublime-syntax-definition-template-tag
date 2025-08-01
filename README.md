@@ -11,22 +11,6 @@ _Provides syntax highlighting for `<template>` tags for Sublime Text_
 
 ## Installation
 
-> [!NOTE]
->
-> This package is currently [under review](https://github.com/wbond/package_control_channel/pull/9123). Once it is approved and merged, you can skip the steps in `1. Add repository`.
-
-
-### 1. Add repository
-
-1. Open Sublime Text.
-1. Open Package Control by pressing <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> (Mac) or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> (Windows). Alternatively, in the menu bar, click on `Sublime Text` > `Settings` > `Package Control`.
-1. Type `repo` in the search bar so that you can quickly find and select `Package Control: Add Repository`.
-1. Type `https://raw.githubusercontent.com/ijlee2/sublime-syntax-definition-template-tag/main/repository.json`.
-1. Continue with the steps in `2. Install via Package Control`.
-
-
-### 2. Install via Package Control
-
 Install the package via [Sublime Text Package Control](https://packagecontrol.io/). This will provide auto-updates.
 
 1. Open Sublime Text.
