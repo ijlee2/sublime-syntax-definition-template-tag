@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.2
+
+### Patch Changes
+
+- [#10](https://github.com/ijlee2/sublime-syntax-definition-template-tag/pull/10) Updated copyright year ([@ijlee2](https://github.com/ijlee2))
+
 ## 1.1.1
 
 ### Patch Changes
