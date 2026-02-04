@@ -16,9 +16,6 @@
   "license": "MIT",
   "author": "Isaac J. Lee",
   "type": "module",
-  "directories": {
-    "test": "tests"
-  },
   "files": [
     "src"
   ],
@@ -31,10 +28,10 @@
   "devDependencies": {
     "@changesets/cli": "^2.29.8",
     "@ijlee2-frontend-configs/changesets": "^1.0.2",
-    "@ijlee2-frontend-configs/prettier": "^2.3.3",
-    "prettier": "^3.7.4"
+    "@ijlee2-frontend-configs/prettier": "^2.4.1",
+    "prettier": "^3.8.1"
   },
-  "packageManager": "pnpm@10.26.2",
+  "packageManager": "pnpm@10.28.2",
   "engines": {
     "node": "20.* || >= 22"
   }
