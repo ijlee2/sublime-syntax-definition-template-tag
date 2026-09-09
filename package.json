@@ -26,12 +26,12 @@
     "release:publish": "changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.31.0",
-    "@ijlee2-frontend-configs/changesets": "^2.1.1",
-    "@ijlee2-frontend-configs/prettier": "^3.3.1",
-    "prettier": "^3.9.5"
+    "@changesets/cli": "^3.0.2",
+    "@ijlee2-frontend-configs/changesets": "^3.0.2",
+    "@ijlee2-frontend-configs/prettier": "^3.3.4",
+    "prettier": "^3.9.6"
   },
-  "packageManager": "pnpm@11.13.0",
+  "packageManager": "pnpm@12.3.4",
   "engines": {
     "node": "22.* || >= 24"
   }
