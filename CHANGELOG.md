@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.0
+
+### Major Changes
+
+- [#16](https://github.com/ijlee2/sublime-syntax-definition-template-tag/pull/16) Split syntax definition to GJS and GTS ([@ijlee2](https://github.com/ijlee2))
+
 ## 1.1.2
 
 ### Patch Changes
