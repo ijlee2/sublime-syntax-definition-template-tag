@@ -25,7 +25,7 @@
     "lint": "prettier . --cache --check",
     "lint:fix": "prettier . --cache --write",
     "release:prepare": "changeset version",
-    "release:publish": "changeset publish"
+    "release:publish": "node ./scripts/update-branches.mjs"
   },
   "devDependencies": {
     "@changesets/cli": "^3.0.2",
