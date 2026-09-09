@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.1
+
+### Patch Changes
+
+- [#17](https://github.com/ijlee2/sublime-syntax-definition-template-tag/pull/17) Added script that updates gjs and gts branches ([@ijlee2](https://github.com/ijlee2))
+
 ## 2.0.0
 
 ### Major Changes
