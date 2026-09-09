@@ -1,4 +1,8 @@
 {
   "access": "public",
-  "changelog": "./formatter.mjs"
+  "changelog": "./formatter.mjs",
+  "privatePackages": {
+    "tag": false,
+    "version": true
+  }
 }
