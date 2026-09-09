@@ -1,7 +1,7 @@
 %YAML 1.2
 ---
-name: Template Tag
-scope: source.template-tag
+name: GTS
+scope: source.template-tag.ts
 version: 2
 
 extends:
@@ -9,7 +9,6 @@ extends:
 
 file_extensions:
   - gjs
-  - gts
 
 contexts:
   # Template-only
@@ -26,7 +25,7 @@ contexts:
     - match: <template>
       scope: punctuation.definition.tag.begin.js
       push:
-        - meta_content_scope: source.template-tag.content
+        - meta_content_scope: source.template-tag.ts.content
         - match: </template>
           scope: punctuation.definition.tag.end.js
           pop: true

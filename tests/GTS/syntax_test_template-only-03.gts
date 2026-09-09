@@ -1,4 +1,4 @@
-// SYNTAX TEST "Packages/User/Template Tag.sublime-syntax"
+// SYNTAX TEST "Packages/User/GTS.sublime-syntax"
 import type { TOC } from '@ember/component/template-only';
 import { hash, uniqueId } from '@ember/helper';
 import { local } from 'embroider-css-modules';
@@ -30,7 +30,7 @@ const UiFormFieldComponent: TOC<UiFormFieldSignature> =
   <template>
   // ^^^^^^^ punctuation.definition.tag.begin.js
     {{#let (uniqueId) as |inputId|}}
-    // ^^^ source.template-tag.content meta.function.block.start.handlebars support.constant.handlebars keyword.control
+    // ^^^ source.template-tag.ts.content meta.function.block.start.handlebars support.constant.handlebars keyword.control
       <div
         class={{local
           styles
@@ -63,10 +63,3 @@ const UiFormFieldComponent: TOC<UiFormFieldSignature> =
   // ^^^^^^^^ punctuation.definition.tag.end.js
 
 export default UiFormFieldComponent;
-
-declare module '@glint/environment-ember-loose/registry' {
-  export default interface Registry {
-    'Ui::Form::Field': typeof UiFormFieldComponent;
-    'ui/form/field': typeof UiFormFieldComponent;
-  }
-}
