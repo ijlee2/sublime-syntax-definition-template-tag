@@ -1,4 +1,4 @@
-// SYNTAX TEST "Packages/User/Template Tag.sublime-syntax"
+// SYNTAX TEST "Packages/User/GJS.sublime-syntax"
 import { render } from '@ember/test-helpers';
 import { a11yAudit } from 'ember-a11y-testing/test-support';
 import { hbs } from 'ember-cli-htmlbars';
@@ -48,20 +48,20 @@ module('Integration | Component | ui/form/field', function (hooks) {
     await render(
     // ^^ meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js keyword.control.flow.await.js
       <template>
-      // ^^^^^^^ source.template-tag meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js punctuation.definition.tag.begin.js 
+      // ^^^^^^^ source.template-tag.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js punctuation.definition.tag.begin.js 
         <UiFormField
           @errorMessage="Please provide a value."
         >
-        // ^ meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js source.template-tag.content
+        // ^ meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js source.template-tag.js.content
           <:label as |l|>
-          // ^^^^ meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js source.template-tag.content meta.tag.other.html entity.name.tag.other.html
+          // ^^^^ meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js source.template-tag.js.content meta.tag.other.html entity.name.tag.other.html
             <label
               data-test-label
               for={{l.inputId}}
             >
-            // ^ meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js source.template-tag.content
+            // ^ meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js source.template-tag.js.content
               Name
-              // ^^ meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js source.template-tag.content
+              // ^^ meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js source.template-tag.js.content
             </label>
           </:label>
 
@@ -75,7 +75,7 @@ module('Integration | Component | ui/form/field', function (hooks) {
           </:field>
         </UiFormField>
       </template>
-      // ^^^^^^^ source.template-tag meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js punctuation.definition.tag.end.js 
+      // ^^^^^^^ source.template-tag.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js punctuation.definition.tag.end.js 
     );
 
     assert

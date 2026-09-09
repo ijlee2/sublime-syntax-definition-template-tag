@@ -1,4 +1,4 @@
-// SYNTAX TEST "Packages/User/Template Tag.sublime-syntax"
+// SYNTAX TEST "Packages/User/GJS.sublime-syntax"
 import { hash, uniqueId } from '@ember/helper';
 import { local } from 'embroider-css-modules';
 
@@ -9,7 +9,7 @@ const UiFormFieldComponent =
   <template>
   // ^^^^^^^ punctuation.definition.tag.begin.js
     {{#let (uniqueId) as |inputId|}}
-    // ^^^ source.template-tag.content meta.function.block.start.handlebars support.constant.handlebars keyword.control
+    // ^^^ source.template-tag.js.content meta.function.block.start.handlebars support.constant.handlebars keyword.control
       <div
         class={{local
           styles

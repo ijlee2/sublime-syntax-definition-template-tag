@@ -16,7 +16,7 @@ Install the package via [Sublime Text Package Control](https://packagecontrol.io
 1. Open Sublime Text.
 1. Open Package Control by pressing <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> (Mac) or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> (Windows). Alternatively, in the menu bar, click on `Sublime Text` > `Settings` > `Package Control`.
 1. Type `install` in the search bar so that you can quickly find and select `Package Control: Install Package`.
-1. Search for `Template Tag`, then select to install.
+1. Search for `GJS`, then select to install. Repeat this step with `GTS`.
 1. Open any file with a `<template>` tag (e.g. components, routes, tests) to see syntax highlighting in action!
 
 > [!NOTE]

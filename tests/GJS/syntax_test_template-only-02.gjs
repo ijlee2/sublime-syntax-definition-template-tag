@@ -3,7 +3,7 @@ import styles from './hello.css';
 
 const HelloComponent = <template>
                      // ^^^^^^^^ punctuation.definition.tag.begin.js
-                     //          ^ source.template-tag source.template-tag.content text.html.handlebars
+                     //          ^ source.template-tag.js source.template-tag.js.content text.html.handlebars
   <div class={{styles.container}}>
     Hello {{@name}}!
   </div>
