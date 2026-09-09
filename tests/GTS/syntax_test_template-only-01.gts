@@ -9,12 +9,11 @@ interface HelloSignature {
   }
 }
 
-const HelloComponent: TOC<HelloSignature> = <template>
-                                            // ^^^^^^^ punctuation.definition.tag.begin.js
+<template>
+// ^^^^^^^ punctuation.definition.tag.begin.js
   <div class={{styles.container}}>
+// ^^^ source.template-tag source.template-tag.content text.html.handlebars meta.tag.block.any.html entity.name.tag.block.any.html 
     Hello {{@name}}!
   </div>
-</template>;
+</template> satisfies TOC<HelloSignature>;
 // ^^^^^^^^ punctuation.definition.tag.end.js
-
-export default HelloComponent;

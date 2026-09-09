@@ -63,10 +63,3 @@ const UiFormFieldComponent: TOC<UiFormFieldSignature> =
   // ^^^^^^^^ punctuation.definition.tag.end.js
 
 export default UiFormFieldComponent;
-
-declare module '@glint/environment-ember-loose/registry' {
-  export default interface Registry {
-    'Ui::Form::Field': typeof UiFormFieldComponent;
-    'ui/form/field': typeof UiFormFieldComponent;
-  }
-}

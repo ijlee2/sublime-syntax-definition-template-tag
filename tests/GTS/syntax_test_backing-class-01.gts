@@ -26,10 +26,3 @@ export default class HelloComponent extends Component<HelloSignature> {
   </template>
   // ^^^^^^^^ source.template-tag meta.export.js meta.class.js meta.block.js meta.function.js punctuation.definition.tag.end.js
 }
-
-declare module '@glint/environment-ember-loose/registry' {
-  export default interface Registry {
-    Hello: typeof HelloComponent;
-    hello: typeof HelloComponent;
-  }
-}
