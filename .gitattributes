@@ -1,10 +1,15 @@
 .changeset export-ignore
+.gitattributes export-ignore
 .github export-ignore
+.gitignore export-ignore
 .npmignore export-ignore
 .prettierignore export-ignore
 CHANGELOG.md export-ignore
 CONTRIBUTING.md export-ignore
 package.json export-ignore
 pnpm-lock.yaml export-ignore
+pnpm-workspace.yaml export-ignore
 prettier.config.mjs export-ignore
+repository.json export-ignore
+scripts export-ignore
 tests export-ignore
