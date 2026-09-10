@@ -2,7 +2,7 @@
 
 # sublime-syntax-definition-template-tag
 
-_Provides syntax highlighting for `<template>` tags for Sublime Text_
+_Provides syntax highlighting for `*.{gjs,gts}` files in Sublime Text_
 
 <div align="center">
   <img alt="The template tag and the code inside are highlighted in Sublime Text" src="https://github.com/user-attachments/assets/344c2206-e78b-4881-ac11-073c25c9c16f" />
@@ -11,17 +11,17 @@ _Provides syntax highlighting for `<template>` tags for Sublime Text_
 
 ## Installation
 
-Install the package via [Sublime Text Package Control](https://packagecontrol.io/). This will provide auto-updates.
+Install these packages via [Sublime Text Package Control](https://packagecontrol.io), then restart Sublime Text.
 
-1. Open Sublime Text.
-1. Open Package Control by pressing <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> (Mac) or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> (Windows). Alternatively, in the menu bar, click on `Sublime Text` > `Settings` > `Package Control`.
-1. Type `install` in the search bar so that you can quickly find and select `Package Control: Install Package`.
-1. Search for `GJS`, then select to install. Repeat this step with `GTS`.
-1. Open any file with a `<template>` tag (e.g. components, routes, tests) to see syntax highlighting in action!
+- `Handlebars`
+- `GJS`
+- `GTS`
 
 > [!NOTE]
 >
-> This package depends on another package called [Handlebars](https://github.com/daaain/Handlebars). Use the Package Control to install the latter, too.
+> Should `GJS` and `GTS` be unavailable in https://packagecontrol.io, you can use `Package Control: Add Repository` and type `https://raw.githubusercontent.com/ijlee2/sublime-syntax-definition-template-tag/main/repository.json` to download code.
+>
+> Once the above step is complete, use `Package Control: Install Package` to install `GJS` and `GTS`.
 
 
 ## Contributing
@@ -31,7 +31,7 @@ See the [Contributing](CONTRIBUTING.md) guide for details.
 
 ## Credits
 
-Thanks to [@daain](https://github.com/daaain/) for supporting Handlebars since 2012.
+Thanks to [@daain](https://github.com/daaain) for supporting Handlebars since 2012.
 
 
 ## License
