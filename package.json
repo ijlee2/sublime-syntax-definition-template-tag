@@ -1,6 +1,6 @@
 {
   "name": "sublime-syntax-definition-template-tag",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "private": true,
   "description": "Provides syntax highlighting for *.{gjs,gts} files in Sublime Text",
   "keywords": [
