@@ -3,27 +3,14 @@
   "schema_version": "4.0.0",
   "packages": [
     {
-      "name": "GJS",
+      "name": "Template Tag",
       "details": "https://github.com/ijlee2/sublime-syntax-definition-template-tag",
-      "description": "Provides syntax highlighting for *.gjs files",
-      "labels": ["language syntax", "ember", "gjs", "template tag"],
+      "description": "Provides syntax highlighting for *.{gjs,gts} files",
+      "labels": ["language syntax", "ember", "gjs", "gts", "template tag"],
       "releases": [
         {
           "sublime_text": "*",
-          "branch": "gjs"
-        }
-      ]
-    },
-    {
-      "name": "GTS",
-      "details": "https://github.com/ijlee2/sublime-syntax-definition-template-tag",
-      "description": "Provides syntax highlighting for *.gts files",
-      "labels": ["language syntax", "ember", "gts", "template tag"],
-      "previous_names": ["Template Tag"],
-      "releases": [
-        {
-          "sublime_text": "*",
-          "branch": "gts"
+          "tags": true
         }
       ]
     }

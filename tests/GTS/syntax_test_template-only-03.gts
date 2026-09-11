@@ -1,4 +1,4 @@
-// SYNTAX TEST "Packages/User/GTS.sublime-syntax"
+// SYNTAX TEST "Packages/User/Template Tag.sublime-syntax"
 import type { TOC } from '@ember/component/template-only';
 import { hash, uniqueId } from '@ember/helper';
 import { local } from 'embroider-css-modules';
@@ -30,7 +30,7 @@ const UiFormFieldComponent: TOC<UiFormFieldSignature> =
   <template>
   // ^^^^^^^ punctuation.definition.tag.begin.js
     {{#let (uniqueId) as |inputId|}}
-    // ^^^ source.template-tag.ts.content meta.function.block.start.handlebars support.constant.handlebars keyword.control
+    // ^^^ source.template-tag.content meta.function.block.start.handlebars support.constant.handlebars keyword.control
       <div
         class={{local
           styles

@@ -1,4 +1,4 @@
-// SYNTAX TEST "Packages/User/GTS.sublime-syntax"
+// SYNTAX TEST "Packages/User/Template Tag.sublime-syntax"
 import { render, type TestContext } from '@ember/test-helpers';
 import { a11yAudit } from 'ember-a11y-testing/test-support';
 import { hbs } from 'ember-cli-htmlbars';
@@ -52,16 +52,16 @@ module('Integration | Component | ui/form/field', function (hooks) {
         <UiFormField
           @errorMessage="Please provide a value."
         >
-        // ^ meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js source.template-tag.ts.content
+        // ^ meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js source.template-tag.content
           <:label as |l|>
-          // ^^^^ meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js source.template-tag.ts.content meta.tag.other.html entity.name.tag.other.html
+          // ^^^^ meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js source.template-tag.content meta.tag.other.html entity.name.tag.other.html
             <label
               data-test-label
               for={{l.inputId}}
             >
-            // ^ meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js source.template-tag.ts.content
+            // ^ meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js source.template-tag.content
               Name
-              // ^^ meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js source.template-tag.ts.content
+              // ^^ meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js source.template-tag.content
             </label>
           </:label>
 
