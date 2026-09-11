@@ -14,14 +14,13 @@ _Provides syntax highlighting for `*.{gjs,gts}` files in Sublime Text_
 Install these packages via [Sublime Text Package Control](https://packagecontrol.io), then restart Sublime Text.
 
 - `Handlebars`
-- `GJS`
-- `GTS`
+- `Template Tag`
 
 > [!NOTE]
 >
-> Should `GJS` and `GTS` be unavailable in https://packagecontrol.io, you can use `Package Control: Add Repository` and type `https://raw.githubusercontent.com/ijlee2/sublime-syntax-definition-template-tag/main/repository.json` to download code.
+> Should `Template Tag` be unavailable in https://packagecontrol.io, you can use `Package Control: Add Repository` and type `https://raw.githubusercontent.com/ijlee2/sublime-syntax-definition-template-tag/main/repository.json` to download code.
 >
-> Once the above step is complete, use `Package Control: Install Package` to install `GJS` and `GTS`.
+> Once the above step is complete, use `Package Control: Install Package` to install `Template Tag`.
 
 
 ## Contributing
