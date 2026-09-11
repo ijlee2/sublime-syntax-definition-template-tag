@@ -11,16 +11,28 @@ _Provides syntax highlighting for `*.{gjs,gts}` files in Sublime Text_
 
 ## Installation
 
-Install these packages via [Sublime Text Package Control](https://packagecontrol.io), then restart Sublime Text.
+Install these packages via [Package Control](https://packagecontrol.io), then restart Sublime Text.
 
-- `Handlebars`
-- `Template Tag`
+- Handlebars
+- Template Tag
+
+<details>
+
+<summary>How to Install</summary>
+
+1. Open Sublime Text.
+1. Open Package Control by pressing <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> (Mac) or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> (Windows). Alternatively, in the menu bar, click on `Sublime Text` > `Settings` > `Package Control`.
+1. Type `install` in the search bar so that you can find and select `Package Control: Install Package`.
+1. Search for `Handlebars`, then select to install. Repeat steps 2-3 for `Template Tag`.
+1. Restart Sublime Text.
+
+</details>
 
 > [!NOTE]
 >
-> Should `Template Tag` be unavailable in https://packagecontrol.io, you can use `Package Control: Add Repository` and type `https://raw.githubusercontent.com/ijlee2/sublime-syntax-definition-template-tag/main/repository.json` to download code.
+> Should [Template Tag](https://packagecontrol.io/packages/Template%20Tag) be unavailable, you can use `Package Control: Add Repository` instead.
 >
-> Once the above step is complete, use `Package Control: Install Package` to install `Template Tag`.
+> Type `https://raw.githubusercontent.com/ijlee2/sublime-syntax-definition-template-tag/main/repository.json` to download code, then use `Package Control: Install Package` to install Template Tag.
 
 
 ## Contributing
@@ -30,7 +42,7 @@ See the [Contributing](CONTRIBUTING.md) guide for details.
 
 ## Credits
 
-Thanks to [@daain](https://github.com/daaain) for supporting Handlebars since 2012.
+Thanks to [@daain](https://github.com/daaain) for supporting Handlebars.
 
 
 ## License
