@@ -1,0 +1,37 @@
+%YAML 1.2
+---
+name: Glimmer JS
+scope: source.gjs
+version: 2
+
+extends:
+  - Packages/JavaScript/JavaScript.sublime-syntax
+
+file_extensions:
+  - gjs
+
+contexts:
+  # Template used as a value
+  #   <template>...</template>
+  #   const Hello = <template>...</template>;
+  #   await render(<template>...</template>);
+  expression-begin:
+    - meta_prepend: true
+    - include: template-tag
+
+  # Template inside a class body
+  #   class Hello extends Component {
+  #     <template>...</template>
+  #   }
+  class-body-contents:
+    - meta_prepend: true
+    - include: template-tag
+
+  template-tag:
+    - match: <template>
+      scope: punctuation.definition.tag.begin.js
+      embed: scope:text.html.handlebars
+      embed_scope: source.gjs.content
+      escape: </template>
+      escape_captures:
+        0: punctuation.definition.tag.end.js

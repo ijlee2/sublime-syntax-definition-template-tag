@@ -102,6 +102,10 @@ Here are some guidelines to help you and everyone else.
 
 1. [Create a tag](https://github.com/ijlee2/sublime-syntax-definition-template-tag/releases/new) and provide release notes. The tag name should match the package version (e.g. `0.1.2`).
 
-1. The latest version will appear on [Package Control](https://packagecontrol.io/packages/Template%20Tag).
+1. Update the release branches. We can use branches to publish multiple Sublime syntax definitions to [Package Control](https://packagecontrol.io).
+
+    ```sh
+    pnpm release:publish
+    ```
 
 </details>
