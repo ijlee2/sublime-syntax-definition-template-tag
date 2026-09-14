@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.0.1
+
+### Patch Changes
+
+- [#22](https://github.com/ijlee2/sublime-syntax-definition-template-tag/pull/22) Removed publishing via branches ([@ijlee2](https://github.com/ijlee2))
+
 ## 4.0.0
 
 ### Major Changes
