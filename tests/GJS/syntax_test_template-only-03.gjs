@@ -8,9 +8,9 @@ const UiFormField = <template>
 // ^^ keyword.declaration.js
                  // ^ punctuation.definition.tag.begin.js
                  // ^^^^^^^^^^ punctuation.definition.tag.begin.js
-                           // ^ source.gjs source.gjs.content text.html.handlebars
+                           // ^ source.gjs source.gjs.content
   {{#let (uniqueId) as |inputId|}}
-  // ^^^ source.gjs source.gjs.content text.html.handlebars meta.function.block.start.handlebars support.constant.handlebars keyword.control
+  // ^^^ source.gjs.content meta.function.block.start.handlebars support.constant.handlebars keyword.control
     <div
       class={{local
         styles
@@ -39,7 +39,7 @@ const UiFormField = <template>
       {{/if}}
     </div>
   {{/let}}
-       // ^ source.gjs source.gjs.content text.html.handlebars
+       // ^ source.gjs source.gjs.content
 </template>;
 //^^^^^^^^ punctuation.definition.tag.end.js
 

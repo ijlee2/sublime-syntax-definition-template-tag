@@ -23,18 +23,15 @@ contexts:
   #   class Hello extends Component {
   #     <template>...</template>
   #   }
-  ts-type-parameter-list:
+  class-body-contents:
     - meta_prepend: true
     - include: template-tag
 
   template-tag:
     - match: <template>
       scope: punctuation.definition.tag.begin.js
-      push:
-        - meta_content_scope: source.gts.content
-        - match: </template>
-          scope: punctuation.definition.tag.end.js
-          pop: true
-        - embed: scope:text.html.handlebars
-          escape: (?=<\/template)
-          match: ""
+      embed: scope:text.html.handlebars
+      embed_scope: source.gts.content
+      escape: </template>
+      escape_captures:
+        0: punctuation.definition.tag.end.js

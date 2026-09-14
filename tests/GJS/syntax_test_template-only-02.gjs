@@ -4,7 +4,7 @@ import styles from './hello.css';
 const Hello = <template>
          // ^ source.gjs keyword.operator.assignment.js
             // ^^^^^^^^ punctuation.definition.tag.begin.js
-                     // ^ source.gjs source.gjs.content text.html.handlebars
+                     // ^ source.gjs source.gjs.content
   <div class={{styles.container}}>
     Hello {{@name}}!
   </div>
