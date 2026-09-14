@@ -62,12 +62,4 @@ try {
   git('checkout', startingBranch);
 }
 
-console.log(
-  [
-    '',
-    'Next, push the branches to publish the packages:',
-    '',
-    `  git push origin ${TARGETS.map(({ branch }) => branch).join(' ')}`,
-    '',
-  ].join('\n'),
-);
+git('push', `origin ${TARGETS.map(({ branch }) => branch).join(' ')}`);

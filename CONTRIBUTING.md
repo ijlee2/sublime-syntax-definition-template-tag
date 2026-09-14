@@ -106,7 +106,6 @@ Here are some guidelines to help you and everyone else.
 
     ```sh
     pnpm release:publish
-    git push origin glimmer-js glimmer-ts
     ```
 
 </details>
