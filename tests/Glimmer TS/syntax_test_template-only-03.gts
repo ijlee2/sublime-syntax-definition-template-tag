@@ -1,13 +1,36 @@
 // SYNTAX TEST "Packages/User/Template Tag.sublime-syntax"
+import type { TOC } from '@ember/component/template-only';
 import { hash, uniqueId } from '@ember/helper';
 import { local } from 'embroider-css-modules';
 
 import styles from './field.css';
 
-const UiFormFieldComponent =
+interface UiFormFieldSignature {
+  Args: {
+    errorMessage?: string;
+    isInline?: boolean;
+    isWide?: boolean;
+  };
+  Blocks: {
+    field: [
+      {
+        inputId: string;
+      }
+    ];
+    label: [
+      {
+        inputId: string;
+      }
+    ];
+  };
+}
+
+const UiFormField: TOC<UiFormFieldSignature> =
 // ^^ keyword.declaration.js
   <template>
-  // ^^^^^^^ punctuation.definition.tag.begin.js
+//^ punctuation.definition.tag.begin.js
+//^^^^^^^^^^ punctuation.definition.tag.begin.js
+         // ^ source.template-tag source.template-tag.content
     {{#let (uniqueId) as |inputId|}}
     // ^^^ source.template-tag.content meta.function.block.start.handlebars support.constant.handlebars keyword.control
       <div
@@ -38,7 +61,8 @@ const UiFormFieldComponent =
         {{/if}}
       </div>
     {{/let}}
-  </template>;
-  // ^^^^^^^^ punctuation.definition.tag.end.js
+         // ^ source.template-tag source.template-tag.content
+  </template>
+ // ^^^^^^^^ punctuation.definition.tag.end.js
 
-export default UiFormFieldComponent;
+export default UiFormField;
