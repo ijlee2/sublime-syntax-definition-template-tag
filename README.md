@@ -13,9 +13,8 @@ _Provides syntax highlighting for `*.{gjs,gts}` files in Sublime Text_
 
 Install these packages via [Package Control](https://packagecontrol.io), then restart Sublime Text.
 
-- Glimmer JS
-- Glimmer TS
-- Handlebars
+- Template Tag
+- Handlebars (a dependency)
 
 <details>
 
@@ -24,14 +23,14 @@ Install these packages via [Package Control](https://packagecontrol.io), then re
 1. Open Sublime Text.
 1. Open Package Control by pressing <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> (Mac) or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> (Windows). Alternatively, in the menu bar, click on `Sublime Text` > `Settings` > `Package Control`.
 1. Type `install` in the search bar so that you can find and select `Package Control: Install Package`.
-1. Search for `Glimmer JS`, then select to install. Repeat steps 2-3 for `Glimmer TS` and `Handlebars`.
+1. Search for `Template Tag`, then select to install. Repeat steps 2-3 for `Handlebars`.
 1. Restart Sublime Text.
 
 </details>
 
 > [!NOTE]
 >
-> Should [Glimmer JS](https://packagecontrol.io/packages/Glimmer%20JS) and [Glimmer JS](https://packagecontrol.io/packages/Glimmer%20TS) be unavailable, you can use `Package Control: Add Repository` instead.
+> Should [Template Tag](https://packagecontrol.io/packages/Template%20Tag) be unavailable, you can use `Package Control: Add Repository` instead.
 >
 > Type `https://raw.githubusercontent.com/ijlee2/sublime-syntax-definition-template-tag/main/repository.json` to download code, then use `Package Control: Install Package` to install Template Tag.
 
