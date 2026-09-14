@@ -1,0 +1,40 @@
+%YAML 1.2
+---
+name: Glimmer TS
+scope: source.gts
+version: 2
+
+extends:
+  - Packages/JavaScript/TypeScript.sublime-syntax
+
+file_extensions:
+  - gts
+
+contexts:
+  # Template used as a value
+  #   <template>...</template>
+  #   const Hello = <template>...</template>;
+  #   await render(<template>...</template>);
+  expression-begin:
+    - meta_prepend: true
+    - include: template-tag
+
+  # Template inside a class body
+  #   class Hello extends Component {
+  #     <template>...</template>
+  #   }
+  ts-type-parameter-list:
+    - meta_prepend: true
+    - include: template-tag
+
+  template-tag:
+    - match: <template>
+      scope: punctuation.definition.tag.begin.js
+      push:
+        - meta_content_scope: source.gts.content
+        - match: </template>
+          scope: punctuation.definition.tag.end.js
+          pop: true
+        - embed: scope:text.html.handlebars
+          escape: (?=<\/template)
+          match: ""

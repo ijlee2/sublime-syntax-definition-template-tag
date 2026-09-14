@@ -1,4 +1,4 @@
-// SYNTAX TEST "Packages/User/Template Tag.sublime-syntax"
+// SYNTAX TEST "Packages/User/Glimmer JS.sublime-syntax"
 import { render } from '@ember/test-helpers';
 import UiFormField from 'my-app/components/ui/form/field';
 import { setupRenderingTest } from 'my-app/tests/helpers';
@@ -11,9 +11,9 @@ module('Integration | Component | ui/form/field', function (hooks) {
     await render(
  // ^^^^^ meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js keyword.control.flow.await.js
       <template>
-   // ^^^^^^^^^^ source.template-tag meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js punctuation.definition.tag.begin.js
+   // ^^^^^^^^^^ source.gjs meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js punctuation.definition.tag.begin.js
         <UiFormField @errorMessage="Please provide a value.">
-      // ^^^^^^^^^^^ meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js source.template-tag.content
+      // ^^^^^^^^^^^ meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js source.gjs.content
           <:label as |l|>
             <label data-test-label for={{l.inputId}}>
               Name
@@ -30,7 +30,7 @@ module('Integration | Component | ui/form/field', function (hooks) {
           </:field>
         </UiFormField>
       </template>
-   // ^^^^^^^^^^^ source.template-tag meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js punctuation.definition.tag.end.js
+   // ^^^^^^^^^^^ source.gjs meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js meta.function.js meta.block.js meta.function-call.arguments.js meta.group.js punctuation.definition.tag.end.js
     );
 
     assert

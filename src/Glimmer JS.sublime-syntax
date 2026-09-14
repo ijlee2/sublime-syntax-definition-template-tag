@@ -1,7 +1,7 @@
 %YAML 1.2
 ---
-name: Template Tag
-scope: source.template-tag
+name: Glimmer JS
+scope: source.gjs
 version: 2
 
 extends:
@@ -9,15 +9,20 @@ extends:
 
 file_extensions:
   - gjs
-  - gts
 
 contexts:
-  # Template-only
+  # Template used as a value
+  #   <template>...</template>
+  #   const Hello = <template>...</template>;
+  #   await render(<template>...</template>);
   expression-begin:
     - meta_prepend: true
     - include: template-tag
 
-  # With backing class
+  # Template inside a class body
+  #   class Hello extends Component {
+  #     <template>...</template>
+  #   }
   ts-type-parameter-list:
     - meta_prepend: true
     - include: template-tag
@@ -26,7 +31,7 @@ contexts:
     - match: <template>
       scope: punctuation.definition.tag.begin.js
       push:
-        - meta_content_scope: source.template-tag.content
+        - meta_content_scope: source.gjs.content
         - match: </template>
           scope: punctuation.definition.tag.end.js
           pop: true

@@ -1,4 +1,4 @@
-// SYNTAX TEST "Packages/User/Template Tag.sublime-syntax"
+// SYNTAX TEST "Packages/User/Glimmer JS.sublime-syntax"
 import { hash, uniqueId } from '@ember/helper';
 import { local } from 'embroider-css-modules';
 
@@ -8,9 +8,9 @@ const UiFormField = <template>
 // ^^ keyword.declaration.js
                  // ^ punctuation.definition.tag.begin.js
                  // ^^^^^^^^^^ punctuation.definition.tag.begin.js
-                           // ^ source.template-tag source.template-tag.content text.html.handlebars
+                           // ^ source.gjs source.gjs.content text.html.handlebars
   {{#let (uniqueId) as |inputId|}}
-  // ^^^ source.template-tag source.template-tag.content text.html.handlebars meta.function.block.start.handlebars support.constant.handlebars keyword.control
+  // ^^^ source.gjs source.gjs.content text.html.handlebars meta.function.block.start.handlebars support.constant.handlebars keyword.control
     <div
       class={{local
         styles
@@ -39,7 +39,7 @@ const UiFormField = <template>
       {{/if}}
     </div>
   {{/let}}
-       // ^ source.template-tag source.template-tag.content text.html.handlebars
+       // ^ source.gjs source.gjs.content text.html.handlebars
 </template>;
 //^^^^^^^^ punctuation.definition.tag.end.js
 
