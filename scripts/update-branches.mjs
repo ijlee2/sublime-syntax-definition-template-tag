@@ -7,9 +7,11 @@ import { execFileSync } from 'node:child_process';
   step rather than something that follows every commit to `main`.
 */
 const TARGETS = [
-  { branch: 'glimmer-js', excludes: 'src/Glimmer JS.sublime-syntax' },
-  { branch: 'glimmer-ts', excludes: 'src/Glimmer TS.sublime-syntax' },
+  { branch: 'glimmer-js', fileToExclude: 'src/Glimmer TS.sublime-syntax' },
+  { branch: 'glimmer-ts', fileToExclude: 'src/Glimmer JS.sublime-syntax' },
 ];
+
+const TARGET_BRANCHES = TARGETS.map(({ branch }) => branch);
 
 const MAIN_BRANCH = 'main';
 
@@ -40,7 +42,7 @@ if (startingBranch !== MAIN_BRANCH) {
 }
 
 try {
-  for (const { branch, excludes } of TARGETS) {
+  for (const { branch, fileToExclude } of TARGETS) {
     if (branchExists(branch)) {
       git('checkout', branch);
       git('merge', MAIN_BRANCH, '--no-edit');
@@ -49,11 +51,11 @@ try {
 
       execFileSync('sh', [
         '-c',
-        `printf '%s export-ignore\\n' '${excludes}' >> .gitattributes && sort -o .gitattributes .gitattributes`,
+        `printf '%s export-ignore\\n' '${fileToExclude.replaceAll(' ', '[[:space:]]')}' >> .gitattributes && sort -o .gitattributes .gitattributes`,
       ]);
 
       git('add', '.gitattributes');
-      git('commit', '-m', `Excluded ${excludes} from the ${branch} package`);
+      git('commit', '-m', `Excluded ${fileToExclude}`);
     }
 
     console.log(`Updated ${branch}`);
@@ -62,4 +64,4 @@ try {
   git('checkout', startingBranch);
 }
 
-git('push', `origin ${TARGETS.map(({ branch }) => branch).join(' ')}`);
+git('push', 'origin', ...TARGET_BRANCHES);
