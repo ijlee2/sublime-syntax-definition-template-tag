@@ -1,5 +1,15 @@
 # Changelog
 
+## 4.0.0
+
+### Major Changes
+
+- [#21](https://github.com/ijlee2/sublime-syntax-definition-template-tag/pull/21) Renamed Template Tag to Glimmer TS. Created Glimmer JS. ([@ijlee2](https://github.com/ijlee2))
+
+### Patch Changes
+
+- [#21](https://github.com/ijlee2/sublime-syntax-definition-template-tag/pull/21) Modernized tests ([@ijlee2](https://github.com/ijlee2))
+
 ## 3.0.1
 
 ### Patch Changes
